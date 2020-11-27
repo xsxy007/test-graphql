@@ -1,0 +1,12 @@
+extend type Query {
+    #    获取所有
+    getAllBankViews: [BankView],
+    #    获取单个
+    getBankView(bankCategory: String!): BankView,
+}
+type BankView {
+    # 类别
+    bankCategory: String
+    #   名称
+    bankName: String
+}

@@ -1,0 +1,19 @@
+extend type Query{
+    #    Fetch all banks
+    getAllBanks: [Bank],
+    #   get bank by id
+    getBank(id: String!): Bank,
+}
+
+type Bank {
+    #    名称
+    bankName: String
+    #    城市code
+    cityCode: String
+    #    支行代码
+    lineNumber: String
+    #    id
+    number: ID!
+    #    行
+    paymentLine: String
+}

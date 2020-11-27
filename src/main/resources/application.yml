@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.157.28.155:8888/p2p_dev?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: p2p_dev
+    password: nicaibudao@321#
+  jpa:
+    generate-ddl: false
+    show-sql: true
+
+
+graphql:
+  servlet:
+    corsEnabled: true
+    mapping: /graphql
+    enabled: true
+logging:
+  level:
+    root: info
